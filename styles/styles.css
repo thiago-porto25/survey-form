@@ -1,6 +1,139 @@
-body {
-    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+html{
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+}
+body::before {  
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#title {
+    text-align: center;
+    color: white;
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+}
+#description {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    font-size: 1.125rem;
+    line-height: 0px;
+}
+#survey-form{
+    background: var(--color-darkblue-alpha);
+    width: 750px;
+    height: 1500px;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    margin: 0 auto;
+    margin-top: 45px;
 }
 p {
-    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+}
+#p-name {
+    margin-top: -5px;
+    margin-bottom: 8px;
+}
+#p-email{
+    margin-bottom: 8px;
+}
+#p-number {
+    margin-bottom: 8px;
+}
+#p-dropdown {
+    margin-bottom: 8px;
+}
+.form-control {
+    margin-left: 30px;
+    width: 42rem;
+    height: 2.2rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+    color: rgb(58, 58, 58);
+}
+#dropdown {
+    background-color: white;
+    width: 42.9rem;
+    height: 2.5rem;
+}
+.radio-style {
+    margin-left: 30px;
+    
+}
+#p-recomend {
+    margin-bottom: 10px;
+}
+.radio-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: white;
+}
+#p-feature {
+    margin-bottom: 10px;
+}
+#feature {
+    background-color: white;
+    width: 42.9rem;
+    height: 2.5rem;
+}
+#p-prefer {
+    margin-bottom: 9px;
+}
+.clue {
+    font-size: 15px;
+    margin-left: 10px;
+}
+.input-checkbox {
+    margin-left: 30px;   
+    margin-bottom: 15px;
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+.checkbox-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+#comments {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    width: 42rem;
+    height: 10rem;
+    margin-left: 30px;
+    padding: 0.625rem;
+}
+#submit-button {
+    color: white;
+    background-color: #37af65;
+    width: 43.4rem;
+    height: 3rem;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #37af65;
+    border-radius: 5px;
+}
+#submit-button:hover {
+    cursor: pointer;
 }
